@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>水果忍者游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>水果忍者游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="lives">生命值: <span id="lives">3</span></div>
+            <div class="combo">连击: <span id="combo">0</span></div>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <h3>控制说明</h3>
+            <p>用鼠标或触摸滑动切割水果，避免切割炸弹！</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

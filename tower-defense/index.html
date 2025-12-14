@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>塔防游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>塔防游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="lives">生命值: <span id="lives">20</span></div>
+            <div class="money">金钱: <span id="money">100</span></div>
+            <div class="wave">波次: <span id="wave">1</span></div>
+            <button id="start-wave-btn">开始波次</button>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <div class="game-main">
+            <div class="game-board-container">
+                <canvas id="game-canvas" width="800" height="600"></canvas>
+            </div>
+            <div class="tower-selection">
+                <h3>防御塔选择</h3>
+                <div class="tower-options">
+                    <div class="tower-option" data-tower="basic" data-cost="50">
+                        <div class="tower-icon">🏹</div>
+                        <div class="tower-name">基础塔</div>
+                        <div class="tower-cost">50</div>
+                    </div>
+                    <div class="tower-option" data-tower="fire" data-cost="100">
+                        <div class="tower-icon">🔥</div>
+                        <div class="tower-name">火焰塔</div>
+                        <div class="tower-cost">100</div>
+                    </div>
+                    <div class="tower-option" data-tower="ice" data-cost="150">
+                        <div class="tower-icon">❄️</div>
+                        <div class="tower-name">冰冻塔</div>
+                        <div class="tower-cost">150</div>
+                    </div>
+                    <div class="tower-option" data-tower="cannon" data-cost="200">
+                        <div class="tower-icon">💣</div>
+                        <div class="tower-name">加农炮</div>
+                        <div class="tower-cost">200</div>
+                    </div>
+                </div>
+                <div class="instructions">
+                    <h4>游戏说明</h4>
+                    <p>1. 点击防御塔图标选择要建造的塔</p>
+                    <p>2. 点击地图上的绿色区域建造塔</p>
+                    <p>3. 点击已建造的塔进行升级</p>
+                    <p>4. 点击"开始波次"按钮开始进攻</p>
+                    <p>5. 阻止敌人到达终点！</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞机大战游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>飞机大战游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="lives">生命值: <span id="lives">3</span></div>
+            <div class="level">关卡: <span id="level">1</span></div>
+            <button id="start-btn">开始游戏</button>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <canvas id="game-canvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <h3>游戏控制</h3>
+            <p>1. 使用方向键或WASD控制飞机移动</p>
+            <p>2. 按空格键发射子弹</p>
+            <p>3. 消灭所有敌人即可过关</p>
+            <p>4. 躲避敌人的子弹和撞击</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

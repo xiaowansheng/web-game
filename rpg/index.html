@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>角色扮演游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>角色扮演游戏</h1>
+        <div class="game-main">
+            <div class="game-left-panel">
+                <div class="player-stats">
+                    <h3>角色状态</h3>
+                    <div class="stat">HP: <span id="hp">100</span>/<span id="max-hp">100</span></div>
+                    <div class="stat">MP: <span id="mp">50</span>/<span id="max-mp">50</span></div>
+                    <div class="stat">等级: <span id="level">1</span></div>
+                    <div class="stat">经验: <span id="exp">0</span>/<span id="max-exp">100</span></div>
+                    <div class="stat">金币: <span id="gold">0</span></div>
+                </div>
+                <div class="inventory">
+                    <h3>背包</h3>
+                    <div id="inventory-items">
+                        <div class="inventory-item">📜 药水 x3</div>
+                        <div class="inventory-item">⚔️ 剑</div>
+                        <div class="inventory-item">🛡️ 盾牌</div>
+                    </div>
+                </div>
+            </div>
+            <div class="game-center">
+                <div class="game-info">
+                    <div class="score">分数: <span id="score">0</span></div>
+                    <button id="restart-btn">重新开始</button>
+                </div>
+                <canvas id="game-canvas" width="800" height="600"></canvas>
+                <div class="game-messages" id="game-messages">
+                    <p>使用WASD或方向键移动，空格键攻击，数字键1-3使用技能</p>
+                </div>
+            </div>
+            <div class="game-right-panel">
+                <div class="skills">
+                    <h3>技能</h3>
+                    <div class="skill">1. 普通攻击</div>
+                    <div class="skill">2. 火球术 (10 MP)</div>
+                    <div class="skill">3. 治疗术 (15 MP)</div>
+                </div>
+                <div class="quests">
+                    <h3>任务</h3>
+                    <div class="quest">🗡️ 消灭10个敌人</div>
+                    <div class="quest">💎 收集5个宝石</div>
+                    <div class="quest">🏰 到达城堡</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

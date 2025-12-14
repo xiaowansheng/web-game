@@ -1,0 +1,196 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #1a1a2e;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+}
+
+.container {
+    text-align: center;
+    background-color: #16213e;
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.2);
+    width: 100%;
+    max-width: 700px;
+    border: 2px solid #00ffff;
+}
+
+h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+    color: #00ffff;
+    font-weight: bold;
+    text-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 10px;
+    flex-wrap: wrap;
+    gap: 15px;
+    border: 1px solid #00ffff;
+    box-shadow: inset 0 0 15px rgba(0, 255, 255, 0.1);
+}
+
+.game-info div {
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.game-info span {
+    color: #ff073a;
+    font-size: 24px;
+    font-weight: bold;
+    background-color: rgba(255, 7, 58, 0.1);
+    padding: 5px 15px;
+    border-radius: 5px;
+    border: 1px solid #ff073a;
+    box-shadow: 0 0 10px rgba(255, 7, 58, 0.5);
+    min-width: 80px;
+    text-align: center;
+}
+
+#gameCanvas {
+    border: 2px solid #00ffff;
+    border-radius: 10px;
+    background-color: #000;
+    box-shadow: 0 0 30px rgba(0, 255, 255, 0.3);
+    display: block;
+    margin: 0 auto 20px;
+    cursor: none;
+}
+
+.controls {
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 20px;
+    flex-wrap: wrap;
+}
+
+button {
+    padding: 12px 24px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #00ffff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 0 15px rgba(0, 255, 255, 0.5);
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border: 1px solid #00ffff;
+}
+
+button:hover {
+    background-color: #00cccc;
+    transform: translateY(-2px);
+    box-shadow: 0 0 20px rgba(0, 255, 255, 0.7);
+}
+
+button:active {
+    transform: translateY(0);
+    box-shadow: 0 0 10px rgba(0, 255, 255, 0.5);
+}
+
+#pauseBtn {
+    background-color: #ffc107;
+    box-shadow: 0 0 15px rgba(255, 193, 7, 0.5);
+    border-color: #ffc107;
+}
+
+#pauseBtn:hover {
+    background-color: #ffb300;
+    box-shadow: 0 0 20px rgba(255, 193, 7, 0.7);
+}
+
+#resetBtn {
+    background-color: #ff073a;
+    box-shadow: 0 0 15px rgba(255, 7, 58, 0.5);
+    border-color: #ff073a;
+}
+
+#resetBtn:hover {
+    background-color: #dc0a2d;
+    box-shadow: 0 0 20px rgba(255, 7, 58, 0.7);
+}
+
+.instructions {
+    background-color: rgba(0, 0, 0, 0.3);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 10px;
+    font-size: 16px;
+    color: #ccc;
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    box-shadow: inset 0 0 10px rgba(0, 255, 255, 0.1);
+}
+
+.instructions p {
+    margin: 0;
+    line-height: 1.5;
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .container {
+        padding: 15px;
+        margin: 10px;
+    }
+    
+    h1 {
+        font-size: 36px;
+    }
+    
+    #gameCanvas {
+        width: 100%;
+        max-width: 500px;
+        height: auto;
+    }
+    
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .game-info div {
+        font-size: 18px;
+    }
+    
+    .game-info span {
+        font-size: 20px;
+    }
+    
+    .controls {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    button {
+        width: 200px;
+    }
+}

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>记忆翻牌游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>记忆翻牌游戏</h1>
+        <div class="game-info">
+            <div class="moves">步数: <span id="moves">0</span></div>
+            <div class="matches">匹配: <span id="matches">0</span></div>
+            <div class="time">时间: <span id="time">0</span>秒</div>
+        </div>
+        <div id="game-board"></div>
+        <div class="controls">
+            <button id="startBtn">开始游戏</button>
+            <button id="resetBtn">重置游戏</button>
+        </div>
+        <div id="game-over" class="game-over">
+            <div class="game-over-content">
+                <h2>恭喜你！</h2>
+                <p>你完成了游戏！</p>
+                <p>总步数: <span id="final-moves">0</span></p>
+                <p>总时间: <span id="final-time">0</span>秒</p>
+                <button id="play-again">再玩一次</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.game-container {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    text-align: center;
+    width: 1000px;
+    max-width: 100%;
+}
+
+h1 {
+    color: #FF5722;
+    margin-bottom: 20px;
+    font-size: 2.5em;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.game-info {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 20px;
+    padding: 15px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.score, .time, .hits, .accuracy {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+    background-color: white;
+    padding: 8px 15px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.score {
+    color: #FF9800;
+}
+
+.time {
+    color: #f44336;
+}
+
+.hits {
+    color: #4CAF50;
+}
+
+.accuracy {
+    color: #2196F3;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+button:disabled {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+
+.game-board {
+    display: grid;
+    grid-template-columns: repeat(5, 150px);
+    grid-template-rows: repeat(3, 150px);
+    gap: 15px;
+    justify-content: center;
+    background-color: #e0e0e0;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.hole {
+    position: relative;
+    width: 150px;
+    height: 150px;
+    background-color: #8D6E63;
+    border-radius: 50%;
+    overflow: hidden;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hole::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #6D4C41;
+    border-radius: 50%;
+    box-shadow: inset 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.mole {
+    position: absolute;
+    bottom: -100%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    height: 100px;
+    background-color: #8D6E63;
+    border-radius: 50% 50% 0 0;
+    transition: bottom 0.3s ease-in-out;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.mole::before {
+    content: '🐭';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 50px;
+}
+
+.mole.active {
+    bottom: 0;
+}
+
+.mole.hit {
+    animation: hit 0.5s ease-in-out;
+}
+
+@keyframes hit {
+    0% {
+        transform: translateX(-50%) scale(1);
+    }
+    50% {
+        transform: translateX(-50%) scale(1.2);
+    }
+    100% {
+        transform: translateX(-50%) scale(1);
+    }
+}
+
+.controls {
+    background-color: #f5f5f5;
+    padding: 15px;
+    border-radius: 5px;
+    text-align: left;
+}
+
+.controls h3 {
+    color: #333;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.controls p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 8px;
+    line-height: 1.4;
+}
+
+/* 响应式设计 */
+@media (max-width: 900px) {
+    .game-container {
+        padding: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+    }
+    
+    .game-board {
+        grid-template-columns: repeat(4, 120px);
+        grid-template-rows: repeat(3, 120px);
+    }
+    
+    .hole {
+        width: 120px;
+        height: 120px;
+    }
+    
+    .mole {
+        width: 80px;
+        height: 80px;
+    }
+    
+    .mole::before {
+        font-size: 40px;
+    }
+}
+
+@media (max-width: 600px) {
+    .game-board {
+        grid-template-columns: repeat(3, 100px);
+        grid-template-rows: repeat(4, 100px);
+        gap: 10px;
+    }
+    
+    .hole {
+        width: 100px;
+        height: 100px;
+    }
+    
+    .mole {
+        width: 70px;
+        height: 70px;
+    }
+    
+    .mole::before {
+        font-size: 30px;
+    }
+    
+    .game-info {
+        flex-direction: column;
+        gap: 10px;
+    }
+    
+    .score, .time, .hits, .accuracy {
+        width: 100%;
+        max-width: 200px;
+    }
+}

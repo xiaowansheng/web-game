@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>消消乐游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>消消乐游戏</h1>
+        <div class="game-info">
+            <div class="score">分数: <span id="score">0</span></div>
+            <div class="level">关卡: <span id="level">1</span></div>
+            <div class="moves">步数: <span id="moves">30</span></div>
+            <button id="restart-btn">重新开始</button>
+        </div>
+        <div class="game-board" id="game-board"></div>
+        <div class="controls">
+            <h3>游戏规则</h3>
+            <p>1. 点击相邻的两个方块进行交换</p>
+            <p>2. 形成3个或更多相同图案的连线即可消除</p>
+            <p>3. 每消除一组方块获得分数</p>
+            <p>4. 在规定步数内达到目标分数即可过关</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
