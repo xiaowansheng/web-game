@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>数独游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>数独游戏</h1>
+        <div class="game-info">
+            <div class="score">
+                <div class="timer">时间: <span id="timer">00:00</span></div>
+                <div class="moves">步数: <span id="moves">0</span></div>
+            </div>
+            <div class="difficulty">
+                <label for="difficulty-select">难度: </label>
+                <select id="difficulty-select">
+                    <option value="easy">简单</option>
+                    <option value="medium" selected>中等</option>
+                    <option value="hard">困难</option>
+                </select>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="board-container">
+                <div id="game-board"></div>
+            </div>
+            <div class="game-side">
+                <div class="controls">
+                    <button id="new-game-btn">新游戏</button>
+                    <button id="check-btn">检查答案</button>
+                    <button id="hint-btn">提示</button>
+                    <button id="solve-btn">自动求解</button>
+                </div>
+                <div class="game-status" id="game-status">
+                    <h3>游戏状态</h3>
+                    <p>选择难度，点击新游戏开始</p>
+                </div>
+                <div class="rules">
+                    <h3>游戏规则</h3>
+                    <ul>
+                        <li>每行必须包含1-9，不重复</li>
+                        <li>每列必须包含1-9，不重复</li>
+                        <li>每个3x3宫格必须包含1-9，不重复</li>
+                        <li>点击空白格子输入数字</li>
+                        <li>使用键盘或点击数字面板输入</li>
+                    </ul>
+                </div>
+                <div class="number-panel">
+                    <h3>数字面板</h3>
+                    <div class="numbers" id="number-panel">
+                        <button class="number-btn">1</button>
+                        <button class="number-btn">2</button>
+                        <button class="number-btn">3</button>
+                        <button class="number-btn">4</button>
+                        <button class="number-btn">5</button>
+                        <button class="number-btn">6</button>
+                        <button class="number-btn">7</button>
+                        <button class="number-btn">8</button>
+                        <button class="number-btn">9</button>
+                        <button class="number-btn clear">清除</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

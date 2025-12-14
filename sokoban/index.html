@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>推箱子游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>推箱子</h1>
+        <div class="game-info">
+            <div class="score">
+                <div>关卡: <span id="level">1</span></div>
+                <div>步数: <span id="moves">0</span></div>
+                <div>时间: <span id="timer">00:00</span></div>
+            </div>
+        </div>
+        <div class="game-area">
+            <div class="board-container">
+                <div id="game-board"></div>
+            </div>
+            <div class="game-side">
+                <div class="controls">
+                    <button id="new-game-btn">新游戏</button>
+                    <button id="reset-btn">重置关卡</button>
+                    <button id="hint-btn">提示</button>
+                    <button id="next-level-btn">下一关</button>
+                </div>
+                <div class="game-status" id="game-status">
+                    <h3>游戏状态</h3>
+                    <p>使用WASD或方向键移动，将箱子推到目标位置</p>
+                </div>
+                <div class="rules">
+                    <h3>游戏规则</h3>
+                    <ul>
+                        <li>使用方向键或WASD移动角色</li>
+                        <li>推动箱子到目标位置</li>
+                        <li>箱子只能推，不能拉</li>
+                        <li>不能穿过墙壁或箱子</li>
+                        <li>所有箱子都到目标位置则通关</li>
+                    </ul>
+                </div>
+                <div class="level-selector">
+                    <h3>选择关卡</h3>
+                    <div id="level-list"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

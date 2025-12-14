@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>乒乓球游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>乒乓球游戏</h1>
+        <div class="game-info">
+            <div class="score">玩家1: <span id="player1-score">0</span></div>
+            <div class="score">玩家2: <span id="player2-score">0</span></div>
+        </div>
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div class="controls">
+            <p>玩家1: W/S 移动</p>
+            <p>玩家2: 方向键上下移动</p>
+            <button id="resetBtn">重新开始</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

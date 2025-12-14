@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>剪刀石头布游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>剪刀石头布</h1>
+        <div class="game-info">
+            <div class="score">
+                <div>玩家: <span id="player-score">0</span></div>
+                <div>电脑: <span id="computer-score">0</span></div>
+            </div>
+            <div class="round">回合: <span id="round">1</span></div>
+        </div>
+        <div class="game-area">
+            <div class="player-area">
+                <h2>玩家选择</h2>
+                <div class="choices" id="player-choices">
+                    <button class="choice" data-choice="rock">
+                        <div class="choice-icon">🪨</div>
+                        <div class="choice-text">石头</div>
+                    </button>
+                    <button class="choice" data-choice="paper">
+                        <div class="choice-icon">📄</div>
+                        <div class="choice-text">布</div>
+                    </button>
+                    <button class="choice" data-choice="scissors">
+                        <div class="choice-icon">✂️</div>
+                        <div class="choice-text">剪刀</div>
+                    </button>
+                </div>
+                <div class="result" id="player-result">
+                    <div class="result-icon">?</div>
+                    <div class="result-text">选择你的手势</div>
+                </div>
+            </div>
+            <div class="vs">VS</div>
+            <div class="computer-area">
+                <h2>电脑选择</h2>
+                <div class="choices computer-choices">
+                    <div class="choice">
+                        <div class="choice-icon">🪨</div>
+                        <div class="choice-text">石头</div>
+                    </div>
+                    <div class="choice">
+                        <div class="choice-icon">📄</div>
+                        <div class="choice-text">布</div>
+                    </div>
+                    <div class="choice">
+                        <div class="choice-icon">✂️</div>
+                        <div class="choice-text">剪刀</div>
+                    </div>
+                </div>
+                <div class="result" id="computer-result">
+                    <div class="result-icon">?</div>
+                    <div class="result-text">等待选择</div>
+                </div>
+            </div>
+        </div>
+        <div class="game-message">
+            <h3 id="game-message">游戏开始！选择你的手势</h3>
+        </div>
+        <button id="reset-btn">重新开始</button>
+        <div class="rules">
+            <h3>游戏规则</h3>
+            <p>石头击败剪刀，剪刀击败布，布击败石头。先赢5回合者获胜！</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

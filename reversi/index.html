@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>黑白棋游戏</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>黑白棋</h1>
+        <div class="game-info">
+            <div class="score">
+                <div>黑棋: <span id="black-score">2</span></div>
+                <div>白棋: <span id="white-score">2</span></div>
+            </div>
+            <div class="current-player">当前回合: <span id="current-player">黑棋</span></div>
+        </div>
+        <div class="game-area">
+            <div class="board-container">
+                <div id="game-board"></div>
+            </div>
+            <div class="game-side">
+                <div class="controls">
+                    <button id="new-game-btn">新游戏</button>
+                    <button id="undo-btn">撤销</button>
+                    <button id="pass-btn">跳过</button>
+                </div>
+                <div class="game-status" id="game-status">
+                    <h3>游戏状态</h3>
+                    <p>黑棋先下，点击空白格子放置棋子</p>
+                </div>
+                <div class="rules">
+                    <h3>游戏规则</h3>
+                    <ul>
+                        <li>黑棋先下，黑白交替</li>
+                        <li>只能在能翻转对方棋子的位置落子</li>
+                        <li>翻转的规则是：落子后，对方的棋子被己方棋子包围（横向、纵向或对角线）</li>
+                        <li>无法落子时可以跳过回合</li>
+                        <li>双方都无法落子时游戏结束，棋子多的一方获胜</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
