@@ -1,0 +1,13 @@
+{
+  "name": "pacman",
+  "version": "1.0.0",
+  "description": "Classic Pacman game implemented with HTML, CSS, and JavaScript",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8000",
+    "start": "python -m http.server 8000"
+  },
+  "keywords": ["game", "pacman", "html5", "javascript"],
+  "author": "",
+  "license": "MIT"
+}

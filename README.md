@@ -13,22 +13,29 @@
 6. **扫雷 (Minesweeper)** - 经典的扫雷游戏，揭开方块并避免地雷。
 7. **消消乐 (Match 3)** - 交换相邻的方块，形成三个或更多相同图案的连线来消除它们。
 8. **打地鼠 (Whack-a-Mole)** - 打地鼠游戏，点击冒出的地鼠获得分数。
+9. **数独 (Sudoku)** - 经典的数独游戏，填写数字使每行、每列和每个小九宫格都包含1-9。
+10. **黑白棋 (Reversi)** - 经典的黑白棋游戏，翻转对方的棋子，最终拥有更多棋子的一方获胜。
+11. **乒乓球游戏 (Pong)** - 经典的乒乓球游戏，控制挡板反弹小球，击败对手。
+12. **剪刀石头布 (Rock Paper Scissors)** - 经典的剪刀石头布游戏，与电脑对战。
 
 ### 中等难度
-9. **俄罗斯方块 (Tetris)** - 经典的俄罗斯方块游戏，控制方块下落，填满行消除。
-10. **太空侵略者 (Space Invaders)** - 射击游戏，控制飞船射击敌人，避免被敌人击中。
-11. **赛车游戏 (Racing Game)** - 控制赛车在赛道上行驶，避开障碍物。
-12. **坦克大战 (Tank Battle)** - 控制坦克射击敌人，保护基地。
-13. **弹球 (Pinball)** - 经典的弹球游戏，控制挡板弹球得分。
-14. **水果忍者 (Fruit Ninja)** - 切割水果，避免炸弹。
-15. **飞机大战 (Airplane Battle)** - 控制飞机射击敌人，躲避敌人的攻击。
-16. **迷宫游戏 (Maze Game)** - 控制角色在迷宫中找到出口。
+12. **俄罗斯方块 (Tetris)** - 经典的俄罗斯方块游戏，控制方块下落，填满行消除。
+13. **太空侵略者 (Space Invaders)** - 射击游戏，控制飞船射击敌人，避免被敌人击中。
+14. **赛车游戏 (Racing Game)** - 控制赛车在赛道上行驶，避开障碍物。
+15. **坦克大战 (Tank Battle)** - 控制坦克射击敌人，保护基地。
+16. **弹球 (Pinball)** - 经典的弹球游戏，控制挡板弹球得分。
+17. **水果忍者 (Fruit Ninja)** - 切割水果，避免炸弹。
+18. **飞机大战 (Airplane Battle)** - 控制飞机射击敌人，躲避敌人的攻击。
+19. **迷宫游戏 (Maze Game)** - 控制角色在迷宫中找到出口。
+20. **推箱子 (Sokoban)** - 经典的推箱子游戏，将箱子推到指定位置。
+21. **Flappy Bird** - 控制小鸟穿越管道，考验反应能力。
 
 ### 困难难度
-17. **平台跳跃游戏 (Platformer)** - 控制角色在平台间跳跃，收集物品，到达终点。
-18. **炸弹人游戏 (Bomberman)** - 放置炸弹炸掉敌人和障碍物，到达终点。
-19. **塔防游戏 (Tower Defense)** - 建造防御塔，阻止敌人入侵。
-20. **角色扮演游戏 (RPG)** - 控制角色进行冒险，战斗，升级。
+22. **平台跳跃游戏 (Platformer)** - 控制角色在平台间跳跃，收集物品，到达终点。
+23. **高级平台跳跃游戏 (Advanced Platformer)** - 带有多个关卡、Boss和收集品的平台跳跃游戏。
+24. **炸弹人游戏 (Bomberman)** - 放置炸弹炸掉敌人和障碍物，到达终点。
+25. **塔防游戏 (Tower Defense)** - 建造防御塔，阻止敌人入侵。
+26. **角色扮演游戏 (RPG)** - 控制角色进行冒险，战斗，升级。
 
 ## 开发计划
 
@@ -211,31 +218,105 @@
   - 任务系统
   - 地图探索
 
+### 21. 数独 (Sudoku)
+- 技术栈：HTML + CSS + JavaScript
+- 功能：
+  - 生成不同难度的数独谜题
+  - 实时验证输入
+  - 自动填充功能
+  - 提示系统
+  - 计时器
+
+### 22. 黑白棋 (Reversi)
+- 技术栈：HTML + CSS + JavaScript
+- 功能：
+  - 双人对战或人机对战
+  - 落子规则验证
+  - 棋子翻转效果
+  - 计分系统
+  - AI难度选择
+
+### 23. 乒乓球游戏 (Pong)
+- 技术栈：HTML5 Canvas + JavaScript + CSS
+- 功能：
+  - 双人对战或人机对战
+  - 物理碰撞检测
+  - 计分系统
+  - 难度选择
+  - 响应式设计
+
+### 24. 推箱子 (Sokoban)
+- 技术栈：HTML5 Canvas + JavaScript + CSS
+- 功能：
+  - 多关卡设计
+  - 推箱子物理效果
+  - 关卡编辑器
+  - 重置关卡功能
+  - 步数统计
+
+### 25. Flappy Bird
+- 技术栈：HTML5 Canvas + JavaScript + CSS
+- 功能：
+  - 重力物理系统
+  - 随机生成管道
+  - 碰撞检测
+  - 计分系统
+  - 响应式设计
+
+### 26. 高级平台跳跃游戏 (Advanced Platformer)
+- 技术栈：HTML5 Canvas + JavaScript + CSS + Phaser.js
+- 功能：
+  - 多关卡设计
+  - Boss战系统
+  - 收集品系统
+  - 多种敌人类型
+  - 场景切换
+
+### 27. 剪刀石头布 (Rock Paper Scissors)
+- 技术栈：HTML + CSS + JavaScript
+- 功能：
+  - 玩家与电脑对战
+  - 随机生成电脑选择
+  - 胜负判定
+  - 计分系统
+  - 多回合模式
+
 ## 项目结构
 
 ```
 web-game/
-├── snake/          # 贪吃蛇游戏
-├── 2048/           # 2048游戏
-├── tetris/         # 俄罗斯方块游戏
-├── space-invaders/ # 太空侵略者游戏
-├── platformer/     # 平台跳跃游戏
-├── memory-card/    # 记忆翻牌游戏
-├── breakout/       # 打砖块游戏
-├── racing/         # 赛车游戏
-├── tank-battle/    # 坦克大战游戏
-├── bomberman/      # 炸弹人游戏
-├── link-game/      # 连连看游戏
-├── minesweeper/    # 扫雷游戏
-├── pinball/        # 弹球游戏
-├── fruit-ninja/    # 水果忍者游戏
-├── tower-defense/  # 塔防游戏
-├── match-3/        # 消消乐游戏
-├── whack-a-mole/   # 打地鼠游戏
-├── airplane-battle/ # 飞机大战游戏
-├── maze-game/      # 迷宫游戏
-├── rpg/            # 角色扮演游戏
-└── README.md       # 项目说明
+├── 2048/                # 2048游戏
+├── advanced-platformer/ # 高级平台跳跃游戏
+├── airplane-battle/     # 飞机大战游戏
+├── bomberman/           # 炸弹人游戏
+├── breakout/            # 打砖块游戏
+├── flappy-bird/         # Flappy Bird游戏
+├── fruit-ninja/         # 水果忍者游戏
+├── link-game/           # 连连看游戏
+├── match-3/             # 消消乐游戏
+├── memory-card/         # 记忆翻牌游戏
+├── minesweeper/         # 扫雷游戏
+├── maze-game/           # 迷宫游戏
+├── pinball/             # 弹球游戏
+├── platformer/          # 平台跳跃游戏
+├── pong/                # 乒乓球游戏
+├── racing/              # 赛车游戏
+├── reversi/             # 黑白棋游戏
+├── rpg/                 # 角色扮演游戏
+├── snake/               # 贪吃蛇游戏
+├── sokoban/             # 推箱子游戏
+├── space-invaders/      # 太空侵略者游戏
+├── sudoku/              # 数独游戏
+├── tank-battle/         # 坦克大战游戏
+├── tetris/              # 俄罗斯方块游戏
+├── tower-defense/       # 塔防游戏
+├── rock-paper-scissors/ # 剪刀石头布游戏
+├── sudoku/              # 数独游戏
+├── tank-battle/         # 坦克大战游戏
+├── tetris/              # 俄罗斯方块游戏
+├── tower-defense/       # 塔防游戏
+├── whack-a-mole/        # 打地鼠游戏
+└── README.md            # 项目说明
 ```
 
 ## 如何运行

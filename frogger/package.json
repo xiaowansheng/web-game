@@ -1,0 +1,13 @@
+{
+  "name": "frogger-game",
+  "version": "1.0.0",
+  "description": "经典青蛙过河游戏实现",
+  "main": "index.html",
+  "scripts": {
+    "dev": "python -m http.server 8080",
+    "start": "python -m http.server 8080"
+  },
+  "keywords": ["game", "frogger", "web"],
+  "author": "",
+  "license": "MIT"
+}
