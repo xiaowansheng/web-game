@@ -1,0 +1,13 @@
+{
+  "name": "asteroids",
+  "version": "1.0.0",
+  "description": "A classic Asteroids game implemented in HTML5 Canvas",
+  "main": "index.html",
+  "scripts": {
+    "start": "python -m http.server 8000",
+    "dev": "python -m http.server 8000"
+  },
+  "keywords": ["game", "asteroids", "canvas", "html5"],
+  "author": "",
+  "license": "MIT"
+}
