@@ -1,4 +1,4 @@
-# Frogger Game
+# 青蛙过河游戏 (Frogger)
 
 经典的青蛙过河游戏实现，使用HTML5 Canvas和JavaScript开发。
 

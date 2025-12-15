@@ -1,77 +1,77 @@
-# Asteroids Game
+# 太空小行星游戏
 
-A classic Asteroids game implemented in HTML5 Canvas.
+使用HTML5 Canvas实现的经典太空小行星游戏。
 
-## Description
+## 游戏介绍
 
-This is a modern take on the classic Asteroids arcade game. Control a spaceship, destroy asteroids, and survive as long as possible!
+这是对经典街机游戏《太空小行星》的现代重制版。控制你的飞船，摧毁小行星，尽可能长时间地生存下去！
 
-## Features
+## 游戏特色
 
-- Classic Asteroids gameplay
-- Smooth 60fps animation
-- Responsive controls
-- Score tracking
-- Multiple lives system
-- Progressive difficulty
-- Visual effects
+- 经典的太空小行星游戏玩法
+- 流畅的60fps动画效果
+- 响应灵敏的控制
+- 分数跟踪系统
+- 多条生命系统
+- 渐进式难度设计
+- 视觉特效
 
-## How to Play
+## 如何游戏
 
-### Controls
+### 控制方式
 
-- **Arrow Keys** or **WASD**: Control the spaceship
-  - Up/W: Thrust forward
-  - Left/A: Turn left
-  - Right/D: Turn right
-- **Spacebar**: Shoot bullets
+- **方向键** 或 **WASD**：控制飞船
+  - 上方向键/W：向前推进
+  - 左方向键/A：向左转向
+  - 右方向键/D：向右转向
+- **空格键**：发射子弹
 
-### Objective
+### 游戏目标
 
-- Destroy all asteroids on screen
-- Avoid colliding with asteroids
-- Each destroyed asteroid awards points based on its size
-- Smaller asteroids split into more asteroids when destroyed
-- Survive as long as possible to get the highest score
+- 摧毁屏幕上的所有小行星
+- 避免与小行星相撞
+- 每个被摧毁的小行星根据其大小奖励不同分数
+- 较小的小行星被摧毁时会分裂成更多的小行星
+- 尽可能长时间地生存以获得最高分
 
-## Installation
+## 安装说明
 
-1. Clone or download this repository
-2. Navigate to the `asteroids` directory
-3. Install dependencies (optional):
+1. 克隆或下载此仓库
+2. 导航到 `asteroids` 目录
+3. 安装依赖（可选）：
    ```bash
    pnpm install
    ```
 
-## Running the Game
+## 运行游戏
 
-### Option 1: Using Python HTTP Server
+### 选项1：使用Python HTTP服务器
 
 ```bash
 pnpm start
 ```
 
-Then open your browser and navigate to `http://localhost:8000`
+然后打开浏览器，导航到 `http://localhost:8000`
 
-### Option 2: Directly in Browser
+### 选项2：直接在浏览器中打开
 
-Simply open the `index.html` file in your web browser.
+只需在Web浏览器中打开 `index.html` 文件即可。
 
-## Game Mechanics
+## 游戏机制
 
-- **Player Ship**: Your spaceship that can thrust, turn, and shoot
-- **Asteroids**: Come in 3 sizes, split into smaller ones when destroyed
-- **Bullets**: Travel in straight lines, destroy asteroids on impact
-- **Lives**: Start with 3 lives, lose one when colliding with an asteroid
-- **Score**: Earn points for destroying asteroids (10-30 points depending on size)
+- **玩家飞船**：可以推进、转向和射击的飞船
+- **小行星**：有3种大小，被摧毁时会分裂成更小的小行星
+- **子弹**：直线飞行，击中小行星时将其摧毁
+- **生命**：开始时有3条生命，与小行星相撞时失去一条生命
+- **分数**：摧毁小行星获得分数（根据大小获得10-30分）
 
-## Technologies Used
+## 技术栈
 
-- HTML5 Canvas for rendering
-- JavaScript for game logic
-- CSS3 for styling
-- pnpm for package management (optional)
+- HTML5 Canvas 用于渲染
+- JavaScript 用于游戏逻辑
+- CSS3 用于样式设计
+- pnpm 用于包管理（可选）
 
-## License
+## 许可证
 
-MIT License
+MIT许可证

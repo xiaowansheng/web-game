@@ -1,79 +1,79 @@
-# Pacman Game
+# 吃豆人游戏
 
-A classic Pacman game implemented with HTML, CSS, and JavaScript.
+使用HTML、CSS和JavaScript实现的经典吃豆人游戏。
 
-## Features
+## 游戏特色
 
-- Classic Pacman gameplay
-- 4 colorful ghosts with different behaviors
-- Score tracking
-- Lives system
-- Multiple levels with increasing difficulty
-- Responsive controls
-- Pause/resume functionality
+- 经典的吃豆人游戏玩法
+- 4个具有不同行为模式的彩色幽灵
+- 分数跟踪系统
+- 多条生命系统
+- 多个难度递增的关卡
+- 响应灵敏的控制
+- 暂停/继续功能
 
-## Installation
+## 安装说明
 
-1. Ensure you have Node.js and pnpm installed
-2. Navigate to the game directory:
+1. 确保你已经安装了Node.js和pnpm
+2. 导航到游戏目录：
    ```bash
    cd pacman
    ```
-3. Install dependencies (if any):
+3. 安装依赖（如果有）：
    ```bash
    pnpm install
    ```
 
-## How to Run
+## 运行游戏
 
-### Using pnpm scripts:
+### 使用pnpm脚本：
 ```bash
 pnpm dev
 ```
-or
+或
 ```bash
 pnpm start
 ```
 
-This will start a local HTTP server. Open your browser and navigate to `http://localhost:8000`.
+这将启动一个本地HTTP服务器。打开浏览器并导航到 `http://localhost:8000`。
 
-### Directly in Browser:
-You can also open `index.html` directly in your web browser.
+### 直接在浏览器中打开：
+你也可以直接在Web浏览器中打开 `index.html` 文件。
 
-## Controls
+## 控制方式
 
-- **Arrow Keys**: Move Pacman
-- **Space Bar**: Start/Pause game
-- **Start Button**: Start or Restart the game
-- **Pause Button**: Pause/Resume the game
+- **方向键**：移动吃豆人
+- **空格键**：开始/暂停游戏
+- **开始按钮**：开始或重新开始游戏
+- **暂停按钮**：暂停/继续游戏
 
-## Gameplay
+## 游戏玩法
 
-1. Control Pacman to eat all the pellets in the maze
-2. Avoid the ghosts
-3. Each pellet eaten gives you 10 points
-4. You have 3 lives
-5. Complete each level by eating all pellets
-6. Ghosts become faster as you progress to higher levels
+1. 控制吃豆人吃掉迷宫中的所有豆子
+2. 避开幽灵
+3. 每吃掉一个豆子得10分
+4. 你有3条生命
+5. 通过吃掉所有豆子完成每个关卡
+6. 随着关卡的提升，幽灵会变得更快
 
-## Game Structure
+## 游戏结构
 
 ```
 pacman/
-├── index.html          # Main HTML file
-├── style.css           # Game styling
-├── script.js           # Game logic
-├── package.json        # pnpm configuration
-└── README.md           # This file
+├── index.html          # 主HTML文件
+├── style.css           # 游戏样式
+├── script.js           # 游戏逻辑
+├── package.json        # pnpm配置
+└── README.md           # 此文件
 ```
 
-## Technologies Used
+## 技术栈
 
-- HTML5 Canvas for game rendering
-- CSS3 for styling
-- Vanilla JavaScript for game logic
-- pnpm for package management
+- HTML5 Canvas 用于游戏渲染
+- CSS3 用于样式设计
+- 原生JavaScript 用于游戏逻辑
+- pnpm 用于包管理
 
-## License
+## 许可证
 
 MIT

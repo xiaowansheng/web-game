@@ -1,127 +1,127 @@
-# Flappy Bird
+# 飞鸟游戏 (Flappy Bird)
 
-A classic Flappy Bird game implemented with HTML5 Canvas, JavaScript, and CSS.
+使用HTML5 Canvas、JavaScript和CSS实现的经典Flappy Bird游戏。
 
-## Game Description
+## 游戏介绍
 
-Flappy Bird is a simple yet addictive game where you control a bird by tapping or pressing space to make it flap its wings. Navigate through the pipes without hitting them or the ground. Try to get the highest score possible!
+Flappy Bird是一款简单却令人上瘾的游戏，你可以通过点击屏幕或按空格键来控制小鸟扇动翅膀。在管道之间穿梭，不要撞到管道或地面。尽可能获得最高分！
 
-## Features
+## 游戏特色
 
-- Classic Flappy Bird gameplay
-- Smooth animations and physics
-- Score tracking with local storage for high scores
-- Pause and resume functionality
-- Responsive design
-- Beautiful graphics with sky, clouds, and sun
-- Game over and pause screens
+- 经典的Flappy Bird游戏玩法
+- 流畅的动画和物理效果
+- 分数跟踪系统，支持本地存储最高分
+- 暂停和继续功能
+- 响应式设计
+- 精美的图形，包括天空、云和太阳
+- 游戏结束和暂停画面
 
-## Getting Started
+## 开始游戏
 
-### Prerequisites
+### 前置条件
 
-- A modern web browser (Chrome, Firefox, Safari, Edge)
-- Python 3 (for running the local server)
+- 现代Web浏览器（Chrome、Firefox、Safari、Edge）
+- Python 3（用于运行本地服务器）
 
-### Installation
+### 安装说明
 
-1. Clone or download this repository
-2. Navigate to the `flappy-bird` directory
-3. Install dependencies (if any) using pnpm:
+1. 克隆或下载此仓库
+2. 导航到 `flappy-bird` 目录
+3. 使用pnpm安装依赖（如果有）：
 
 ```bash
 pnpm install
 ```
 
-### Running the Game
+### 运行游戏
 
-You can run the game in two ways:
+你可以通过两种方式运行游戏：
 
-#### Method 1: Using Python HTTP Server
+#### 方法1：使用Python HTTP服务器
 
 ```bash
 pnpm run dev
 ```
 
-or
+或
 
 ```bash
 python -m http.server 8080
 ```
 
-Then open your browser and navigate to `http://localhost:8080`
+然后打开浏览器并导航到 `http://localhost:8080`
 
-#### Method 2: Directly opening the HTML file
+#### 方法2：直接打开HTML文件
 
-Simply open the `index.html` file in your web browser.
+只需在Web浏览器中打开 `index.html` 文件即可。
 
-## How to Play
+## 如何游戏
 
-1. Click the "Start Game" button to begin
-2. Press the **Space** key or **Click** anywhere on the screen to make the bird flap its wings
-3. Navigate through the green pipes without hitting them
-4. Avoid hitting the ground or ceiling
-5. Try to get the highest score possible
-6. Click "Pause" to pause the game, and "Resume" to continue
-7. When the game is over, click or press Space to play again
+1. 点击 "Start Game" 按钮开始游戏
+2. 按 **空格键** 或 **点击屏幕任意位置** 让小鸟扇动翅膀
+3. 在绿色管道之间穿梭，不要撞到它们
+4. 避免撞到地面或天花板
+5. 尝试获得尽可能高的分数
+6. 点击 "Pause" 暂停游戏，点击 "Resume" 继续游戏
+7. 游戏结束时，点击屏幕或按空格键重新开始
 
-## Game Controls
+## 游戏控制
 
-- **Space Bar**: Make the bird flap its wings
-- **Mouse Click**: Make the bird flap its wings
-- **Start Button**: Start a new game
-- **Pause/Resume Button**: Pause or resume the game
+- **空格键**：让小鸟扇动翅膀
+- **鼠标点击**：让小鸟扇动翅膀
+- **开始按钮**：开始新游戏
+- **暂停/继续按钮**：暂停或继续游戏
 
-## Project Structure
+## 项目结构
 
 ```
 flappy-bird/
-├── index.html          # Main HTML file
-├── style.css           # Game styles
-├── script.js           # Game logic
-├── package.json        # Project configuration
-└── README.md           # This file
+├── index.html          # 主HTML文件
+├── style.css           # 游戏样式
+├── script.js           # 游戏逻辑
+├── package.json        # 项目配置
+└── README.md           # 此文件
 ```
 
-## Technologies Used
+## 技术栈
 
-- **HTML5**: Structure of the game
-- **CSS3**: Styling and animations
-- **JavaScript**: Game logic and physics
-- **HTML5 Canvas**: Graphics rendering
-- **pnpm**: Package management
+- **HTML5**：游戏结构
+- **CSS3**：样式和动画
+- **JavaScript**：游戏逻辑和物理效果
+- **HTML5 Canvas**：图形渲染
+- **pnpm**：包管理
 
-## Development
+## 开发说明
 
-### Adding New Features
+### 添加新功能
 
-If you want to contribute or add new features to the game, feel free to modify the following files:
+如果你想为游戏贡献或添加新功能，可以修改以下文件：
 
-- `index.html`: Change the game structure
-- `style.css`: Modify the game appearance
-- `script.js`: Add new game mechanics or features
+- `index.html`：更改游戏结构
+- `style.css`：修改游戏外观
+- `script.js`：添加新的游戏机制或功能
 
-### Game Constants
+### 游戏常量
 
-You can adjust the game difficulty by modifying the constants at the top of `script.js`:
+你可以通过修改 `script.js` 顶部的常量来调整游戏难度：
 
-- `GRAVITY`: Gravity strength
-- `JUMP_STRENGTH`: How high the bird jumps
-- `PIPE_SPEED`: Speed of the pipes
-- `PIPE_GAP`: Gap between pipes
+- `GRAVITY`：重力强度
+- `JUMP_STRENGTH`：小鸟跳跃的高度
+- `PIPE_SPEED`：管道的移动速度
+- `PIPE_GAP`：管道之间的间隙
 
-## Browser Compatibility
+## 浏览器兼容性
 
-This game is compatible with all modern web browsers that support HTML5 Canvas and ES6 JavaScript.
+这款游戏兼容所有支持HTML5 Canvas和ES6 JavaScript的现代Web浏览器。
 
-## License
+## 许可证
 
-This project is open source and available under the [MIT License](LICENSE).
+本项目是开源的，采用 [MIT许可证](LICENSE)。
 
-## Acknowledgments
+## 致谢
 
-- Inspired by the original Flappy Bird game by Dong Nguyen
-- Built with vanilla JavaScript for maximum compatibility
-- Uses HTML5 Canvas for smooth graphics rendering
+- 灵感来源于Dong Nguyen的原始Flappy Bird游戏
+- 使用原生JavaScript构建，以获得最大的兼容性
+- 使用HTML5 Canvas实现流畅的图形渲染
 
-Enjoy playing Flappy Bird!
+享受Flappy Bird游戏！
